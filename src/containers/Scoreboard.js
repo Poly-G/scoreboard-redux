@@ -6,7 +6,8 @@ import Header from '../components/Header';
 
 export default class Scoreboard extends Component {
 state = {
-  players: [{
+  players: [
+    {
       name: 'Jim Hoskins',
       score: 31,
     },
