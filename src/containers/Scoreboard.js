@@ -66,43 +66,4 @@ const Scoreboard = React.createClass({
   }
 });
 
-// ----------------------------------------------
-
-function Header(props) {
-  return (
-    <div className="header">
-      <Stats players={props.players} />
-      <h1>Scoreboard</h1>
-      <Stopwatch />
-    </div>
-  );
-}
-
-Header.propTypes = {
-  players: React.PropTypes.array.isRequired,
-};
-
-// ----------------------------------------------------------------------
-
-function Player(props) {
-  return (
-    <div className="player">
-      <div className="player-name">
-        <a className="remove-player" onClick={props.onRemove}>✖</a>
-        {props.name}
-      </div>
-      <div className="player-score">
-        <Counter onChange={props.onScoreChange} score={props.score} />
-      </div>
-    </div>
-  );
-}
-
-Player.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  score: React.PropTypes.number.isRequired,
-  onRemove: React.PropTypes.func.isRequired,
-  onScoreChange: React.PropTypes.func.isRequired,
-};
-
 export default Scoreboard;
