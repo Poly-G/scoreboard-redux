@@ -1,9 +1,8 @@
 import React from 'react';
 
-import Stopwatch from '../components/Stopwatch';
-import Counter from '../components/Counter';
-import Stats from '../components/Stats';
 import AddPlayerForm from '../components/AddPlayerForm';
+import Player from '../components/Player';
+import Header from '../components/Header';
 
 
 
